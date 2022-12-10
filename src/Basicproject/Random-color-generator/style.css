@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090221;
+}
+
+.container {
+    height: 200px;
+    width: 350px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.color-div {
+    height: 150px;
+    width: 100%;
+    background: #9370DB;
+    /* position: absolute; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#code {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.generate-btn {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: #514CE1;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container::before {
+    content: "Random Color Generator";
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    transform: translate(-50% -50%);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Author {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    bottom: 25px;
+    left: 44%;
+}
+
+.Author h4 {
+    font-size: 20px;
+}
+
+h4 span {
+    color: orangered;
+}

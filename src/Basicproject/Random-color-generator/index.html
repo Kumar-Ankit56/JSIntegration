@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Code generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="color-div">
+            <span id="code">#9370db</span>
+            <button onclick="getNewcolor()" class="generate-btn">Generate</button>
+        </div>
+    </div>
+    <div class="Author">
+        <h4>Made by ❤ <span> Ankit kumar</span></h4>
+    </div>
+    <script>
+        function getNewcolor() {
+            var symbol,color;
+            symbol="0123456789ABCDEF";
+            color="#";
+            for(var i=0; i<6;i++){
+                color=color+symbol[Math.floor(Math.random()*16)];
+            }
+            document.querySelector('.color-div').style.background=color;
+            document.getElementById('code').innerHTML=color;
+        }
+    </script>
+</body>
+</html>
