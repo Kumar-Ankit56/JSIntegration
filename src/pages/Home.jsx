@@ -6,9 +6,9 @@ import Typed from "react-typed";
 
 function Home() {
   return (
-    <div name="home" className="h-screen w-full">
+    <div name="Home" className="h-screen w-full  md:block">
       <div className="max-w-screen-2xl mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center text-center md:text-left h-full relative">
+        <div className="flex md:ml-10 flex-col justify-center text-center md:text-left h-full relative">
           <h2 className="text-7xl md:text-7xl font-bold text-indigo-800">
             Welcome to Javascript Projects
           </h2>
@@ -38,7 +38,7 @@ function Home() {
           <img
             src={siteLogo}
             alt="my profile"
-            className="rounded-2xl mx-auto mb-8 md:w-full"
+            className="rounded-2xl mx-auto mb-8 lg:w-full"
           />
         </div>
       </div>
