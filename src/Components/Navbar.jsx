@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import logo from "./site-img/jslogo.jpg";
 import { AiOutlineClose, AiOutlineMenu, AiFillMail } from "react-icons/ai";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsPersonPlusFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 function Navbar() {
   const [nav, setNav] = useState(false);
 
   function handleNav() {
-    setNav(!nav);
+    setNav(true);
   }
 
   return (
@@ -32,10 +30,11 @@ function Navbar() {
                   Home
                 </li>
               </Link>
-
-              <li className="ml-10 text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
-                Project
-              </li>
+              <Link to="Project">
+                <li className="ml-10 text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
+                  Project
+                </li>
+              </Link>
 
               <li className="ml-10 text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
                 Basic
@@ -55,12 +54,12 @@ function Navbar() {
       {/* --BreackPointforsmall-device---- */}
       <div
         className={
-          !nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : " "
         }
       >
         <div
           className={
-            !nav
+            nav
               ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%]  md:w-[45%] h-screen bg-[#ecf0f3] p-7 ease-in duration-500 z-50"
               : "fixed left-[-100%] p-7 ease-in duration-500 z-50"
           }
