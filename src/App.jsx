@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import APIBased from "./pages/APIBased";
 import BasicProject from "./pages/BasicProject";
+import Footer from "./pages/footer";
 
 function Main() {
   return (
@@ -12,8 +13,9 @@ function Main() {
       <Navbar />
       <Home />
       <Project />
-      <BasicProject />
-      {/* <BasicProject2 /> */}
+      {/* <BasicProject /> */}
+      <APIBased />
+      <Footer />
     </div>
   );
 }
