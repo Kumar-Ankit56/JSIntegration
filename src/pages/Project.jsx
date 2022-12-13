@@ -7,7 +7,7 @@ function Project() {
   return (
     <div
       name="Project"
-      className="bg-gradient-to-b bg-[#f9f6fe] w-full h-max text-white md:h-max"
+      className="bg-gradient-to-b bg-[#f9f6fe] w-full h-max text-white  md:h-max"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full">
         <div className="text-center relative">
@@ -19,7 +19,7 @@ function Project() {
             <span className="absolute bg-yellow-400 top-14 w-24 h-1 mt-3 right-[40%] sm:w-20 sm:top-8 sm:right-16 md:right-5 md:top-10 lg:w-40"></span>
           </h3>
         </div>
-        <div className="grid sm:grid-cols-2 mt-14 md:grid-cols-3 gap-20 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 mt-14 md:grid-cols-3 gap-20 place-content-center sm:px-0">
           {ProjectData.map((ProjectD) => (
             <div
               key={ProjectD.id}

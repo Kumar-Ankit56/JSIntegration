@@ -48,10 +48,11 @@ function Navbar() {
                   Project
                 </li>
               </Link>
-
-              <li className="ml-10 cursor-pointer text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
-                Basic
-              </li>
+              <Link to="basicProject" smooth={true} duration={500}>
+                <li className="ml-10 cursor-pointer text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
+                  Basic
+                </li>
+              </Link>
               <Link to="APIBased">
                 <li className="ml-10 cursor-pointer text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
                   API Based
@@ -77,7 +78,7 @@ function Navbar() {
           className={
             !nav
               ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%]  md:w-[45%] h-screen bg-[#ecf0f3] p-7 ease-in duration-500 z-50"
-              : "fixed left-[-100%] p-7 ease-in duration-500 z-50"
+              : "fixed left-[-100%] p-5 ease-in duration-500 z-50"
           }
         >
           <div>
