@@ -13,7 +13,7 @@ function Main() {
       <Navbar />
       <Home />
       <Project />
-      {/* <BasicProject /> */}
+      <BasicProject />
       <APIBased />
       <Footer />
     </div>

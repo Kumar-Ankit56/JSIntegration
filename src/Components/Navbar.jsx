@@ -48,12 +48,12 @@ function Navbar() {
                   Project
                 </li>
               </Link>
-              <Link to="basicProject" smooth={true} duration={500}>
+              <Link to="BasicProject" smooth={true} duration={500}>
                 <li className="ml-10 cursor-pointer text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
                   Basic
                 </li>
               </Link>
-              <Link to="APIBased">
+              <Link to="APIProject">
                 <li className="ml-10 cursor-pointer text-xl text-white uppercase hover:text-yellow-400 hover:border-b hover:border-b-yellow-400">
                   API Based
                 </li>
@@ -110,17 +110,21 @@ function Navbar() {
                   Home
                 </li>
               </Link>
-              <Link to="/Project">
+              <Link to="Project">
                 <li className=" hover:text-yellow-400 hover:border-b hover:border-b-yellow-400 py-4 text-xl uppercase text-black font-medium ">
                   Project
                 </li>
               </Link>
-              <li className=" hover:text-yellow-400 hover:border-b hover:border-b-yellow-400 py-4 text-xl uppercase text-black font-medium ">
-                Basic
-              </li>
-              <li className=" hover:text-yellow-400 hover:border-b hover:border-b-yellow-400 py-4 text-xl uppercase text-black font-medium ">
-                API Based
-              </li>
+              <Link to="BasicProject">
+                <li className=" hover:text-yellow-400 hover:border-b hover:border-b-yellow-400 py-4 text-xl uppercase text-black font-medium ">
+                  Basic
+                </li>
+              </Link>
+              <Link to="APIProject">
+                <li className=" hover:text-yellow-400 hover:border-b hover:border-b-yellow-400 py-4 text-xl uppercase text-black font-medium ">
+                  API Based
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

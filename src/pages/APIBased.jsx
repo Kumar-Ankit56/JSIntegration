@@ -6,8 +6,8 @@ import { BiDesktop } from "react-icons/bi";
 function APIBased() {
   return (
     <div
-      name="Project"
-      className="bg-gradient-to-b bg-[#b490f3] w-full h-max text-white  md:h-max"
+      name="APIProject"
+      className="bg-gradient-to-b bg-[#d9f8ef] w-full h-max text-white  md:h-max"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full">
         <div className="text-center relative">
