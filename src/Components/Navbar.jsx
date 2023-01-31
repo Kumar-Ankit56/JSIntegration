@@ -29,12 +29,14 @@ function Navbar() {
           <div className="w-[40px] h-[40px] flex items-center ">
             <img
               style={{ borderRadius: "5px" }}
-              className="mr-3"
+              className="mr-3 "
               src={logo}
               alt="logo"
             />
 
-            <p className="ml-1 text-white font-medium text-3xl">Project</p>
+            <p className="ml-1 text-white font-medium md:text-3xl text-xl">
+              Project
+            </p>
           </div>
           <div className="">
             <ul className="hidden md:flex ">
